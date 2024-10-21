@@ -26,6 +26,15 @@ button.onclick = getSum;
  */
 function getSum(){
     let val = parseInt(input.value);
+    let sum = 0; // Initialize the sum variable
+
+    // Use a for loop to calculate the sum of numbers from 0 to val (not including val)
+    for (let i = 0; i < val; i++) {
+        sum += i; // Add i to the sum
+    }
+
+    // Display the result in the result element
+    result.innerText = sum; 
 }
 
 
